@@ -28,6 +28,9 @@ build/
 .gradle
 local.properties
 *.iml
+
+*.keystore
+!debug.keystore
 *.hprof
 
 # node.js
@@ -39,8 +42,6 @@ yarn-error.log
 # BUCK
 buck-out/
 \.buckd/
-*.keystore
-!debug.keystore
 
 # fastlane
 #
@@ -49,13 +50,12 @@ buck-out/
 # For more information about the recommended setup visit:
 # https://docs.fastlane.tools/best-practices/source-control/
 
-*/fastlane/report.xml
-*/fastlane/Preview.html
-*/fastlane/screenshots
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
 
 # Bundle artifact
 *.jsbundle
 
-# Ruby / CocoaPods
+# CocoaPods
 /ios/Pods/
-/vendor/bundle/
